@@ -8,10 +8,12 @@
     <!-- {{ app_name }} 은 Jinja2 변수 자리입니다. main.py 에서 넘긴 값으로 바뀝니다. -->
     <h1>{{ app_name }}에 오신 것을 환영합니다!</h1>
     <p>이것은 간단한 온라인 메모장 애플리케이션입니다.</p>
+    <p>현재 시간은 {{ time_now }}입니다.</p>
     <ul>
         <li><a href="/about">/about</a> — JSON 응답 보기</li>
         <li><a href="/hello/네트?age=20">/hello/네트?age=20</a> — 매개변수 받기</li>
         <li><a href="/docs">/docs</a> — 자동 API 문서</li>
+        <li><a href="/health">/health</a> — 연결 상태 보기</li>
     </ul>
 </body>
 </html>
